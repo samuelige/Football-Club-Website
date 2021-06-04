@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from '../Components/Header_Footer/Header'
 import Layout from '../HOC/Layout'
 
 const Route = () => {
     return (
         <Layout>
-            <h1>Hello, Sammy</h1>
+            <Header />
         </Layout>
     )
 }
