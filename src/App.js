@@ -2,8 +2,8 @@
 
 const App = () =>{
   return (
-    <div className="text-red-600">
-      hello Sammy
+    <div className="">
+      
     </div>
   );
 }
