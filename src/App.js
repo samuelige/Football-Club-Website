@@ -1,9 +1,10 @@
+import Route from "./Route/Route"
 
 
 const App = () =>{
   return (
-    <div className="">
-      
+    <div>
+      <Route/>
     </div>
   );
 }
