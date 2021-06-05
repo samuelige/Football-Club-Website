@@ -24,9 +24,9 @@ const Header = () => {
     return (
         <div className="absolute w-full">
             <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
-                <header className={`${isSticky ? 'sticky bg-red-700 text-white' : 'unSticky'}`}>
-                    <div className='hidden lg:container lg:w-full lg:flex lg:flex-row lg:items-center lg:px-14 lg:py-6'>
-                        <div className='cursor-pointer'>
+                <header className={`${isSticky ? 'sticky bg-red-700 text-white' : 'unSticky bg-DarkBlue  h-16 md:h-20'}`}>
+                    <div className='hidden lg:container lg:w-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-14 lg:py-6'>
+                        <div className='cursor-pointer '>
                             <LogoComponent
                                 path='/'
                                 src={logo}
@@ -34,7 +34,7 @@ const Header = () => {
                             />
                         </div>
 
-                        <nav className='space-x-4 m-auto'>
+                        <nav className='space-x-4 text-white'>
                             {
                                 menuItems?.map(({path, label}, i) => (
                                     <CustomLink path={path} key={i}>
@@ -54,7 +54,7 @@ const Header = () => {
                             />
                         </div>
 
-                        <div className={menu ? "top-100 p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-10 md:mt-24" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-12 md:mt-16"}>
+                        <div className={menu ? "top-100 p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-16 md:mt-24" : "hidden p-2 border-r bg-white absolute rounded top-0 left-0 right-0 shadow mt-12 md:mt-16"}>
                             <nav className='flex flex-col space-y-2 mb-4 '>
                                 {
                                     menuItems?.map(({path, label}, i) => (
@@ -68,9 +68,9 @@ const Header = () => {
 
                         <div className="float-right  xl:hidden">
                             {!menu ? (
-                                <HiDotsHorizontal className="h-5" id="open" onClick={() => setMenu(true)} />
+                                <HiDotsHorizontal className="h-5 text-white" id="open" onClick={() => setMenu(true)} />
                             ) : (
-                                <HiOutlineX className="h-5" id="close" onClick={() => setMenu(false)}/>
+                                <HiOutlineX className="h-5 text-white" id="close" onClick={() => setMenu(false)}/>
                             )}
                         </div>
                     </div>

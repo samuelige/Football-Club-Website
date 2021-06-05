@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CustomLink = ({children, label, path}) => {
     return (
-        <Link className="cursor-pointer" to={path} >
+        <Link className="cursor-pointer " to={path} >
             {children || label}
         </Link>
     )
