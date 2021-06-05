@@ -6,6 +6,9 @@ module.exports = {
       backgroundColor: theme => ({
         'DarkBlue': '#181733'
       }),
+      backgroundImage: theme => ({
+        'footerBg': "url('./../src/Assets/footer-background.png')",
+      }),
     },
   },
   variants: {
