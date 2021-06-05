@@ -22,7 +22,7 @@ const Header = () => {
     };
 
     return (
-        <div className="absolute w-full">
+        <div className="w-full">
             <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
                 <header className={`${isSticky ? 'sticky bg-red-700 text-white' : 'unSticky bg-DarkBlue  h-16 md:h-20'}`}>
                     <div className='hidden lg:container lg:w-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-14 lg:py-6'>
