@@ -4,9 +4,9 @@ import logo from '../../../Assets/logo.png'
 
 const Footer = () => {
     return (
-        <div className="items-center m-auto h-32  lg:h-52 m space-y-1 bg-footerBg">
+        <div className="fixed w-full bottom-0 h-32  lg:h-28 space-y-1 bg-footerBg">
 
-            <div className="flex pt-14 flex-row justify-center ">
+            <div className="flex pt-6 flex-row justify-center ">
                 <LogoComponent 
                     path='/'
                     src={logo}

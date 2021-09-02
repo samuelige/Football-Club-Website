@@ -1,8 +1,12 @@
 import React from 'react'
+import Banner from './Banner/Banner'
+
 
 const Features = () => {
     return (
-        <div>
+        <div className=" w-full bg-DarkBlue h-customHeight" >
+            
+            <Banner/>
             
         </div>
     )

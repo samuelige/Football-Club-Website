@@ -1,11 +1,21 @@
 import React from 'react'
+import { Switch, Route} from 'react-router'
 
 import Layout from '../HOC/Layout'
+import Features from '../pages/home'
 
-const Route = () => {
+
+
+
+const Router = () => {
+    
     return (
-        <Layout></Layout>
+        <Layout>
+            <Switch>
+                <Route path={ "/"} exact component={Features}/>
+            </Switch>
+        </Layout>
     )
 }
 
-export default Route
+export default Router
