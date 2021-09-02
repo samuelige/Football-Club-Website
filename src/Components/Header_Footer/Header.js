@@ -3,7 +3,6 @@ import Sticky from 'react-stickynode';
 import LogoComponent from '../LogoComponent';
 import logo from "../../Assets/logo.png";
 import menuItems from './header_data';
-import { Link } from 'react-scroll';
 import { HiDotsHorizontal } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
 import CustomLink from '../CustomLink';
@@ -24,7 +23,7 @@ const Header = () => {
     return (
         <div className="w-full">
             <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
-                <header className={`${isSticky ? 'sticky bg-red-700 text-white' : 'unSticky bg-DarkBlue  h-16 md:h-20'}`}>
+                <header className={`${isSticky ? 'sticky bg-FcYellow h-16 text-white' : 'unSticky bg-DarkWine h-16 md:h-20'}`}>
                     <div className='hidden lg:container lg:w-full lg:flex lg:flex-row lg:justify-between lg:items-center lg:px-14 lg:py-6'>
                         <div className='cursor-pointer '>
                             <LogoComponent

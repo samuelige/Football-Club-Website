@@ -1,10 +1,11 @@
-import Route from "./Route/Route"
+import Router from "./Route/Route";
+
 
 
 const App = () =>{
   return (
     <div>
-      <Route/>
+      <Router/>
     </div>
   );
 }
